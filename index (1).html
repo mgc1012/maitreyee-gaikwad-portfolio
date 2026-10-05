@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maitreyee Gaikwad — product marketer and MBA product manager turning customer insight into products people can use." />
+  <title>Maitreyee Gaikwad | Product Marketing & Product Management</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a365d'/%3E%3Cpath d='M17 44V20h5l10 13 10-13h5v24h-6V30l-9 12-9-12v14z' fill='%23f2b66d'/%3E%3C/svg%3E" />
+  <style>
+    :root { --ink:#172033; --muted:#617084; --navy:#1a365d; --blue:#2f6f92; --gold:#e7a75e; --cream:#f7f4ed; --white:#fffdf9; --line:#dfe3e7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px, calc(100% - 40px)); margin:0 auto; }
+    .topbar { padding:22px 0; border-bottom:1px solid rgba(23,32,51,.12); background:rgba(247,244,237,.9); }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; gap:12px; align-items:center; font-weight:800; letter-spacing:-.02em; }
+    .mark { width:38px; height:38px; display:grid; place-items:center; border-radius:11px; background:var(--navy); color:var(--gold); font-weight:900; font-size:17px; }
+    .navlinks { display:flex; gap:25px; color:var(--muted); font-size:14px; font-weight:700; }
+    .navlinks a:hover { color:var(--navy); }
+    .hero { padding:88px 0 94px; display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:end; }
+    .eyebrow { color:var(--blue); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:800; margin:0 0 20px; }
+    h1 { max-width:720px; margin:0; font-family: Georgia, serif; font-size:clamp(3.1rem, 7vw, 6.2rem); line-height:.96; letter-spacing:-.07em; font-weight:500; }
+    .hero h1 em { color:var(--blue); font-style:normal; }
+    .lede { max-width:630px; margin:28px 0 0; font-size:19px; color:#4e5d70; }
+    .actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:13px 19px; border-radius:999px; font-weight:800; font-size:14px; border:1px solid var(--navy); transition:.2s ease; }
+    .button.primary { background:var(--navy); color:white; }
+    .button.secondary { color:var(--navy); background:transparent; }
+    .button:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(26,54,93,.14); }
+    .hero-card { position:relative; padding:30px; min-height:340px; border-radius:24px; background:var(--navy); color:white; overflow:hidden; }
+    .hero-card:after { content:""; position:absolute; width:220px; height:220px; right:-70px; bottom:-70px; border-radius:50%; border:30px solid rgba(231,167,94,.85); }
+    .hero-card h2 { position:relative; z-index:1; margin:0; max-width:240px; font-family:Georgia,serif; font-weight:500; font-size:31px; line-height:1.08; }
+    .hero-card p { position:relative; z-index:1; max-width:250px; margin:18px 0 0; color:#d9e5ef; }
+    .stat-row { position:absolute; z-index:1; left:30px; bottom:28px; display:flex; gap:24px; }
+    .stat strong { display:block; color:var(--gold); font-size:28px; line-height:1; }
+    .stat span { color:#d9e5ef; font-size:12px; }
+    section { padding:92px 0; }
+    .section-head { display:flex; justify-content:space-between; gap:30px; align-items:end; margin-bottom:36px; }
+    .section-head h2 { margin:0; font-family:Georgia,serif; font-size:clamp(2.2rem,4vw,4rem); font-weight:500; line-height:1; letter-spacing:-.05em; }
+    .section-head p { color:var(--muted); max-width:350px; margin:0; }
+    .work { background:var(--white); }
+    .case-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    .case { border:1px solid var(--line); border-radius:20px; padding:27px; background:var(--white); min-height:310px; display:flex; flex-direction:column; justify-content:space-between; transition:.2s ease; }
+    .case:hover { border-color:var(--blue); transform:translateY(-3px); box-shadow:0 12px 28px rgba(26,54,93,.08); }
+    .case.featured { background:var(--navy); color:white; border-color:var(--navy); }
+    .case-tag { color:var(--blue); font-size:12px; text-transform:uppercase; letter-spacing:.12em; font-weight:800; }
+    .featured .case-tag { color:var(--gold); }
+    .case h3 { margin:16px 0 10px; font-size:26px; letter-spacing:-.04em; }
+    .case p { margin:0; color:var(--muted); max-width:460px; }
+    .featured p { color:#d7e2ec; }
+    .case-foot { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-top:28px; }
+    .case-result { font-weight:800; color:var(--navy); }
+    .featured .case-result { color:var(--gold); }
+    .case-link { color:var(--blue); font-size:14px; font-weight:800; }
+    .featured .case-link { color:white; }
+    .case-study { border-top:1px solid var(--line); margin-top:52px; padding-top:42px; }
+    .study-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .study-step { padding:22px; border-radius:16px; background:var(--cream); border:1px solid var(--line); }
+    .study-step b { display:block; color:var(--blue); font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+    .study-step h3 { margin:0 0 8px; font-size:18px; }
+    .study-step p { margin:0; color:var(--muted); font-size:15px; }
+    .artifact-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .artifact { color:var(--navy); border:1px solid var(--line); padding:7px 11px; border-radius:8px; font-size:13px; font-weight:800; background:var(--white); }
+    .about { display:grid; grid-template-columns:.8fr 1.2fr; gap:90px; }
+    .about h2 { margin:0; font-family:Georgia,serif; font-weight:500; font-size:clamp(2.4rem,5vw,4.7rem); line-height:1; letter-spacing:-.06em; }
+    .about-copy p { margin:0 0 22px; color:#4e5d70; font-size:18px; }
+    .pill-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:30px; }
+    .pill { border:1px solid var(--line); background:var(--white); padding:8px 12px; border-radius:999px; font-size:13px; font-weight:700; }
+    .timeline { border-top:1px solid var(--line); }
+    .role { display:grid; grid-template-columns:150px 1fr 130px; gap:30px; padding:26px 0; border-bottom:1px solid var(--line); }
+    .role-date { color:var(--blue); font-size:13px; font-weight:800; }
+    .role h3 { margin:0 0 4px; font-size:20px; }
+    .role p { margin:0; color:var(--muted); }
+    .role-result { color:var(--navy); font-weight:800; font-size:14px; text-align:right; }
+    .credentials { padding-top:80px; padding-bottom:88px; }
+    .credential-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:34px; }
+    .credential-grid .pill-row { margin-top:0; }
+    .education-list { border-top:1px solid var(--line); }
+    .education-list div { padding:13px 0; border-bottom:1px solid var(--line); }
+    .education-list strong, .education-list span { display:block; }
+    .education-list strong { font-size:15px; }
+    .education-list span { color:var(--muted); font-size:13px; margin-top:2px; }
+    .analysis-note { margin-top:38px; padding:18px 20px; border-left:3px solid var(--gold); background:var(--white); color:var(--muted); font-size:15px; }
+    .analysis-note strong { color:var(--navy); }
+    .contact { background:var(--navy); color:white; padding:82px 0; }
+    .contact-inner { display:flex; justify-content:space-between; align-items:end; gap:35px; }
+    .contact h2 { max-width:670px; margin:0; font-family:Georgia,serif; font-size:clamp(2.5rem,6vw,5.7rem); line-height:.97; letter-spacing:-.06em; font-weight:500; }
+    .contact p { max-width:300px; color:#d7e2ec; margin:0; }
+    .contact .button { margin-top:24px; border-color:var(--gold); color:var(--navy); background:var(--gold); }
+    footer { padding:24px 0; background:#122946; color:#c2d0dc; font-size:13px; }
+    .footer-row { display:flex; justify-content:space-between; gap:20px; }
+    @media (max-width:800px) { .hero, .about { grid-template-columns:1fr; gap:40px; } .hero { padding-top:60px; } .case-grid, .study-grid, .credential-grid { grid-template-columns:1fr; } .section-head, .contact-inner { align-items:start; flex-direction:column; } .role { grid-template-columns:1fr; gap:7px; } .role-result { text-align:left; } }
+    @media (max-width:560px) { .wrap { width:min(100% - 28px,1120px); } .navlinks { gap:12px; font-size:12px; } .brand span { display:none; } .hero-card { min-height:300px; } section { padding:68px 0; } .footer-row { flex-direction:column; gap:5px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="wrap"><nav><a class="brand" href="#top"><span class="mark">M</span><span>Maitreyee Gaikwad</span></a><div class="navlinks"><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#credentials">Background</a><a href="#contact">Contact</a></div></nav></div></header>
+  <main id="top">
+    <section class="wrap hero">
+      <div><p class="eyebrow">Product marketing · Product management · Storytelling</p><h1>I turn insight into <em>momentum.</em></h1><p class="lede">I’m Maitreyee, a journalist-turned-product marketer and MBA candidate specializing in Product Management. I connect customer understanding, strategy, and execution to build products that move people and businesses forward.</p><div class="actions"><a class="button primary" href="#work">Explore my work</a><a class="button secondary" href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+      <aside class="hero-card"><h2>Curious about people. Serious about outcomes.</h2><p>My work spans digital products, AI, growth, social impact, and customer-led strategy.</p><div class="stat-row"><div class="stat"><strong>30%</strong><span>online sales growth</span></div><div class="stat"><strong>50%+</strong><span>team output gain</span></div></div></aside>
+    </section>
+    <section id="work" class="work"><div class="wrap"><div class="section-head"><h2>Selected work</h2><p>A few projects that show how I frame problems, make decisions, and turn ideas into working products.</p></div><div class="case-grid">
+      <article class="case featured"><div><div class="case-tag">Civic technology · AI</div><h3>OneCare</h3><p>Consulted with the City of San José to address substance use through a connected resident and city-staff experience. I defined needs across treatment, healthcare, transportation, shelter, and referrals, then translated the journey into a chatbot and follow-up platform.</p></div><div class="case-foot"><span class="case-result">From ideation to prototype deployment</span><a class="case-link" href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">Discuss the work</a></div></article>
+      <article class="case"><div><div class="case-tag">Digital product · User research</div><h3>Bloom Better</h3><p>An AI postpartum support platform and community for emotional and mental health support. I owned the product from ideation through alpha launch and post-launch iteration, partnering with mothers and OBGYNs to guide product direction.</p></div><div class="case-foot"><span class="case-result">Validated with mothers and OBGYNs</span><a class="case-link" href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">View on LinkedIn</a></div></article>
+      <article class="case"><div><div class="case-tag">Automation · AI agents</div><h3>Agentic AI Automation Suite</h3><p>Four practical agents for LinkedIn publishing, expense claims, office-hour scheduling, and long-form video repurposing—built and tested in two weeks.</p></div><div class="case-foot"><span class="case-result">10K+ increase in content reach</span><a class="case-link" href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">View on LinkedIn</a></div></article>
+      <article class="case"><div><div class="case-tag">Product strategy · Simulation</div><h3>Carbon Fiber Bicycle Company</h3><p>A marketplace simulation where research, demand analysis, competitive signals, and experimentation shaped a pivot from premium to affordable positioning.</p></div><div class="case-foot"><span class="case-result">Highest market share across markets</span><a class="case-link" href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">View on LinkedIn</a></div></article>
+    </div></div></section>
+    <section class="wrap case-study"><div class="section-head"><h2>How I approach a product problem</h2><p>My strongest work is not just the final screen. It is the reasoning between the user problem and the outcome.</p></div><div class="study-grid"><div class="study-step"><b>01 · Frame</b><h3>Understand the user and the system</h3><p>Start with customer research, interviews, market signals, and the operational context around the problem.</p></div><div class="study-step"><b>02 · Decide</b><h3>Turn insight into product direction</h3><p>Define the audience, prioritize the highest-value needs, shape requirements, and connect the product to a measurable goal.</p></div><div class="study-step"><b>03 · Learn</b><h3>Build, test, and improve</h3><p>Use prototypes, feedback, analytics, and cross-functional collaboration to improve the product after launch.</p></div></div><div class="artifact-row"><span class="artifact">Research notes</span><span class="artifact">User flows</span><span class="artifact">Product requirements</span><span class="artifact">Roadmaps</span><span class="artifact">GTM narratives</span><span class="artifact">Metrics</span></div></section>
+    <section class="wrap about"><div><p class="eyebrow">How I work</p><h2>Useful clarity for messy problems.</h2></div><div class="about-copy"><p>My background in journalism taught me how to ask better questions, find the signal in a noisy story, and make complex information understandable. Product marketing gave me a way to connect that understanding to positioning, growth, and launch.</p><p>Now, through my MBA in Product Management, I’m building on that foundation with product strategy, analytics, experimentation, and hands-on AI product development.</p><div class="pill-row"><span class="pill">Customer insights</span><span class="pill">Product requirements</span><span class="pill">GTM strategy</span><span class="pill">AI products</span><span class="pill">Cross-functional execution</span><span class="pill">Strategic storytelling</span></div></div></section>
+    <section id="experience" class="work"><div class="wrap"><div class="section-head"><h2>Experience</h2><p>Roles where I connected customers, teams, data, and decisions.</p></div><div class="timeline">
+      <div class="role"><div class="role-date">Feb–May 2026</div><div><h3>Data Analyst · Meta</h3><p>Automated annotation corrections with Python, standardized model-error documentation, and analyzed recurring error patterns and quality and safety signals in the WhatsApp bot.</p></div><div class="role-result">50%+ output gain</div></div>
+      <div class="role"><div class="role-date">Feb 2023–Jan 2026</div><div><h3>Product Marketing Specialist · CoStar Imports</h3><p>Translated customer and sales insight into website requirements, product narratives, roadmap input, and go-to-market strategy while managing accounts generating approximately $1M in revenue.</p></div><div class="role-result">30% online sales growth</div></div>
+      <div class="role"><div class="role-date">Mar 2020–Jul 2021</div><div><h3>Volunteer Marketing & Communications Manager · SAI</h3><p>Led a feminine hygiene initiative, ran 50+ seminars, distributed 200K+ reusable napkins, and used audience insight to improve donor outreach.</p></div><div class="role-result">$25K donations</div></div>
+      <div class="role"><div class="role-date">Apr 2019–Nov 2020</div><div><h3>News Anchor & Video Journalist · GoNews India</h3><p>Produced and anchored stories for a national audience, using audience analysis and content testing to improve reach and engagement.</p></div><div class="role-result">25% viewership growth</div></div>
+    </div></div></section>
+    <section id="credentials" class="wrap credentials"><div class="section-head"><h2>Background</h2><p>The combination of communication, product strategy, analytics, and business training behind my work.</p></div><div class="credential-grid"><div><p class="eyebrow">Product & strategy</p><div class="pill-row"><span class="pill">Product lifecycle</span><span class="pill">Requirements gathering</span><span class="pill">Roadmap prioritization</span><span class="pill">GTM strategy</span><span class="pill">Competitive analysis</span><span class="pill">Customer insights</span><span class="pill">Metrics & KPIs</span></div></div><div><p class="eyebrow">Data & tools</p><div class="pill-row"><span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Replit</span><span class="pill">AI agentic tools</span><span class="pill">Google Analytics</span><span class="pill">Excel</span><span class="pill">Salesforce</span><span class="pill">HubSpot</span><span class="pill">Data modeling</span></div></div><div><p class="eyebrow">Education & certifications</p><div class="education-list"><div><strong>MBA, Product Management</strong><span>San José State University · 2025–2027</span></div><div><strong>M.S. in Mass Communications</strong><span>San José State University · 2021–2023</span></div><div><strong>Python for Everyone · Generative AI for Everyone · Prompt Engineering for ChatGPT</strong><span>Certifications</span></div></div></div></div><div class="analysis-note"><strong>Additional analytical work:</strong> Financial analysis case studies on Costco and Delta/Northwest Airlines, including ratio, cash-flow, benchmarking, investment recommendation, and covenant-breach-risk analysis.</div></section>
+    <section id="contact" class="contact"><div class="wrap contact-inner"><div><p class="eyebrow" style="color:var(--gold)">Let’s connect</p><h2>Have a product problem worth exploring?</h2><a class="button" href="mailto:gmaitreyee96@gmail.com">Email Maitreyee</a></div><p>I’m open to product marketing, product management, and customer-focused strategy opportunities.</p></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© 2026 Maitreyee Gaikwad</span><a href="https://www.linkedin.com/in/maitreyeegaikwad/" target="_blank" rel="noreferrer">linkedin.com/in/maitreyeegaikwad</a></div></footer>
+</body>
+</html>
